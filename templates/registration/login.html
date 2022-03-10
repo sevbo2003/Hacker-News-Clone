@@ -1,0 +1,48 @@
+{% extends 'base/base.html' %}
+{% block style %}
+{% endblock %}
+{% block content %}
+    <div id="__next">
+        <div class="WordSection1">
+            <b>Login</b><br/><br/>
+            <form method="post" action="{% url 'login' %}" style="margin-bottom:1em">{% csrf_token %}
+                <input type="hidden" name="goto" value="/"/>
+                <table style="border:0px">
+                    <tbody>
+                    <tr>
+                        <td>username:</td>
+                        <td><input type="text" autoCapitalize="off" autoCorrect="off" name="username" id="id_username" size="20"
+                                   spellcheck="false"/></td>
+                    </tr>
+                    <tr>
+                        <td>password:</td>
+                        <td><input type="password" name="password" id="id_password" size="20"/></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <br/><input type="submit" value="login"/>
+            </form>
+            <a href="/forgot">Forgot your password?</a><br/><br/><b>Create Account</b><br/><br/>
+            <form method="post" action="{% url 'signup' %}" style="margin-bottom:1em">{% csrf_token %}
+                <table style="border:0px">
+                    <tbody>
+                    <tr>
+                        <td>username:</td>
+                        <td><input type="text" name="username" id="id_username" size="20" autoCorrect="off" spellcheck="false"
+                                   autoCapitalize="off"/></td>
+                    </tr>
+                    <tr>
+                        <td>password:</td>
+                        <td><input type="password" name="password1" id="id_password1" size="20"/></td>
+                    </tr>
+                    <tr>
+                        <td>Confirm password:</td>
+                        <td><input type="password" name="password2" id="id_password2" size="20"/></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <br/><input type="submit" value="create account"/>
+            </form>
+        </div>
+    </div>
+{% endblock %}
