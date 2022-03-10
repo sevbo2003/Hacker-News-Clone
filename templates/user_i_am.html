@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charSet="utf-8"/>
+        <title>Hacker News Clone</title>
+        <meta name="referrer" content="origin"/>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+        <link rel="stylesheet" type="text/css" href="/static/news.css"/>
+        <link rel="shortcut icon" href="/static/favicon.ico"/>
+        <meta name="next-head-count" content="6"/>
+    </head>
+    <body>
+        <div id="__next">
+            <div>
+                <table id="hnmain" style="background-color:#f6f6ef;border:0px;border-collapse:collapse;border-spacing:0px;margin-left:auto;margin-right:auto;padding:0px;width:85%">
+                    <tbody>
+                        <tr>
+                            <td style="background-color:#ff6600;padding:0px">
+                                <table style="border:0px;padding:2px;border-spacing:0px;width:100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="width:18px;padding:0px;padding-right:4px"><a href="/"><img src="/static/y18.gif" style="border:1px;border-color:white;border-style:solid;height:18px;width:18px"/></a></td>
+                                            <td style="line-height:12px;height:10px;padding:0px"><span class="pagetop"><b class="hnname"><a href="/news">Hacker News</a></b> <a class="" href="/newest">new</a> | <a class="" href="/newcomments">comments</a> | <a class="" href="/show">show</a> | <a class="" href="/ask">ask</a> | <a class="" href="/jobs">jobs</a> | <a class="" href="/submit">submit</a></span></td>
+                                            <td style="text-align:right;padding:0px;padding-right:4px"><span class="pagetop"><a href="/user?id=sevbo">sevbo</a> (1) | <a href="/logout?auth=d78ccc2c6120ffe08f32451519c2ff46d34c51ab&amp;amp;goto=/user">logout</a></span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr style="height:10px"></tr>
+                        <tr>
+                            <td>
+                                <form class="profileform" method="post" action="/xuser">
+                                    <input type="hidden" name="id" value="clintonwoo"/><input type="hidden" name="hmac" value="71104445c3c41b4167c38db67a656e610d5fbad9"/>
+                                    <table style="border:0px">
+                                        <tbody>
+                                            <tr class="athing">
+                                                <td style="vertical-align:top">user:</td>
+                                                <td><a class="hnuser" style="color:#3c963c" href="/user?id=clintonwoo">sevbo</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="vertical-align:top">created:</td>
+                                                <td>1 minute ago</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="vertical-align:top">karma:</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="vertical-align:top">about:</td>
+                                                <td><textarea cols="60" name="about" rows="5" style="font-size:-2" wrap="virtual"></textarea><a tabindex="-1" style="color:#afafaf" href="/formatdoc">help</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="vertical-align:top">email:</td>
+                                                <td><input type="text" name="uemail" size="60" value=""/></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="vertical-align:top">showdead:</td>
+                                                <td>
+                                                    <select name="showd">
+                                                        <option value="yes">yes</option>
+                                                        <option selected="" value="no">no</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="vertical-align:top">noprocrast:</td>
+                                                <td>
+                                                    <select name="nopro">
+                                                        <option value="yes">yes</option>
+                                                        <option selected="" value="no">no</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="vertical-align:top">maxvisit:</td>
+                                                <td><input type="text" name="maxv" size="16" value="20"/></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="vertical-align:top">minaway:</td>
+                                                <td><input type="text" name="mina" size="16" value="180"/></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="vertical-align:top">delay:</td>
+                                                <td><input type="text" name="delay" size="16" value="0"/></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td><a href="/changepw"><u>change password</u></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td><a href="/submitted?id=clintonwoo"><u>submissions</u></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td><a href="/threads?id=clintonwoo"><u>comments</u></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td><a href="/hidden"><u>hidden</u></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td><a href="/upvoted?id=clintonwoo"><u>upvoted submissions</u></a> / <a href="/upvoted?id=clintonwoo&amp;comments=t"><u>comments</u></a>  <span style="font-style:italic">(private)</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td><a href="/favorites?id=clintonwoo"><u>favorite submissions</u></a> / <a href="/favorites?id=clintonwoo&amp;comments=t"><u>comments</u></a>  <span style="font-style:italic">(shared)</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br/><input type="submit" value="update"/>
+                                </form>
+                                <br/><br/>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

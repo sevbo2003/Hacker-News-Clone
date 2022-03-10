@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charSet="utf-8"/>
+        <title>Hacker News Clone</title>
+        <meta name="referrer" content="origin"/>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+        <link rel="stylesheet" type="text/css" href="/static/news.css"/>
+        <link rel="shortcut icon" href="/static/favicon.ico"/>
+        <meta name="next-head-count" content="6"/>
+    </head>
+    <body>
+        <div id="__next">
+            <div>
+                <table id="hnmain" style="background-color:#f6f6ef;border:0px;border-collapse:collapse;border-spacing:0px;margin-left:auto;margin-right:auto;padding:0px;width:85%">
+                    <tbody>
+                        <tr>
+                            <td style="background-color:#ff6600;padding:0px">
+                                <table style="border:0px;padding:2px;border-spacing:0px;width:100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="width:18px;padding:0px;padding-right:4px"><a href="/"><img src="/static/y18.gif" style="border:1px;border-color:white;border-style:solid;height:18px;width:18px"/></a></td>
+                                            <td style="line-height:12px;height:10px;padding:0px"><span class="pagetop"><b class="hnname"><a href="/news">Hacker News</a></b> <a class="" href="/newest">new</a> | <a class="" href="/newcomments">comments</a> | <a class="" href="/show">show</a> | <a class="topsel" href="/ask">ask</a> | <a class="" href="/jobs">jobs</a> | <a class="" href="/submit">submit</a></span></td>
+                                            <td style="text-align:right;padding:0px;padding-right:4px"><span class="pagetop"><a href="/login?goto=/ask">login</a></span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr style="height:10px"></tr>
+                        <tr>
+                            <td style="padding:0px">
+                                <table style="border:0px;padding:0px;border-collapse:collapse;border-spacing:0px" class="itemlist">
+                                    <tbody>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">1.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30617118">Ask HN: Any weird tips for weight loss?</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    216<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=fatmoron">fatmoron</a> <span class="age"><a href="/item?id=30617118">22 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30617118">764 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">2.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30627656">Ask HN: When will car prices normalize?</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    6<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=arikr">arikr</a> <span class="age"><a href="/item?id=30627656">23 minutes ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30627656">2 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">3.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30626083">Ask HN: How do Google/Facebook/Twitter/Netflix/Spotify determine my location?</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    6<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=margal">margal</a> <span class="age"><a href="/item?id=30626083">3 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30626083">2 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">4.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30627007">Ask HN: What is the best way to discover NPM packages?</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    2<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=seekayel">seekayel</a> <span class="age"><a href="/item?id=30627007">1 hour ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30627007">discuss</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">5.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30627406">Ask HN: Any weird but healthy tips for weight gain?</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    6<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=mgh2">mgh2</a> <span class="age"><a href="/item?id=30627406">46 minutes ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30627406">5 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">6.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30624118">Companies with No Work to Do?</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    12<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=goldname">goldname</a> <span class="age"><a href="/item?id=30624118">7 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30624118">12 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">7.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30626933">Ask HN: What are some effective ways to test cloud-native applications?</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    4<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=TeamCode">TeamCode</a> <span class="age"><a href="/item?id=30626933">1 hour ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30626933">3 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">8.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30618577">Ask HN: How do you securely self-host a server?</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    69<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=QuikAccount">QuikAccount</a> <span class="age"><a href="/item?id=30618577">20 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30618577">41 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">9.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30617884">Can Minecraft be played without giving MS a Phone#?</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    56<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=OrbitalShotput_">OrbitalShotput_</a> <span class="age"><a href="/item?id=30617884">21 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30617884">32 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">10.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30626072">Ask HN: Which devtools do you find the most useful?</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    2<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=sanketpatrikar">sanketpatrikar</a> <span class="age"><a href="/item?id=30626072">3 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30626072">1 comment</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">11.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30617535">Ask HN: How much work do you do during your notice period?</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    25<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=hemloc_io">hemloc_io</a> <span class="age"><a href="/item?id=30617535">21 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30617535">66 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">12.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30622089">Ask HN: How to make older iPad/iPhone usable?</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    20<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=throwaway888abc">throwaway888abc</a> <span class="age"><a href="/item?id=30622089">14 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30622089">22 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">13.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30617747">Ask HN: What happens if TSMC is destroyed?</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    35<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=throw10920">throw10920</a> <span class="age"><a href="/item?id=30617747">21 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30617747">26 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">14.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30624753">Tell HN: Stripe.network</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    5<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=corentin88">corentin88</a> <span class="age"><a href="/item?id=30624753">6 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30624753">discuss</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">15.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30623562">Ask HN: What&#x27;s happening with Google accounts Friday?</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    7<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=HWR_14">HWR_14</a> <span class="age"><a href="/item?id=30623562">9 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30623562">2 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">16.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30618598">Ask HN: Which are the best computer science MOOCs?</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    24<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=ibobev">ibobev</a> <span class="age"><a href="/item?id=30618598">20 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30618598">11 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">17.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30622824">Ask HN: Why are there no good USB-C hubs?</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    9<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=dgrin91">dgrin91</a> <span class="age"><a href="/item?id=30622824">12 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30622824">4 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">18.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30623161">Ask HN: How much of a SaaS needs to be built before fundraising?</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    7<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=MathCodeLove">MathCodeLove</a> <span class="age"><a href="/item?id=30623161">11 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30623161">10 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">19.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30619899">Ask HN: Do students often go to grad school because they had a bad industry job?</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    12<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=amichail">amichail</a> <span class="age"><a href="/item?id=30619899">18 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30619899">11 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">20.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30613751">Tell HN: Apple prioritising direct sales, resellers months behind</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    42<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=allie1">allie1</a> <span class="age"><a href="/item?id=30613751">1 day ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30613751">33 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">21.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30596404">Tell HN: All .fj domains have gone offline</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    93<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=markdown">markdown</a> <span class="age"><a href="/item?id=30596404">2 days ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30596404">49 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">22.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30600480">Ask HN: Why do certain websites&#x27; images get smaller when I zoom in?</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    68<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=cphoover">cphoover</a> <span class="age"><a href="/item?id=30600480">2 days ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30600480">31 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">23.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30608377">Ask HN: I just got my first job and I need to learn faster and better</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    37<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=Arisaka1">Arisaka1</a> <span class="age"><a href="/item?id=30608377">1 day ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30608377">31 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">24.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30611900">Ask HN: Book recommendations for renewable energy and climate change?</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    22<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=fredrb">fredrb</a> <span class="age"><a href="/item?id=30611900">1 day ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30611900">24 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">25.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30610038">Ask HN: How to search major newspapers easily?</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    8<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=hnthrowaway0315">hnthrowaway0315</a> <span class="age"><a href="/item?id=30610038">1 day ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30610038">3 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">26.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30610112">Ask HN: What are your favourite brokers to manage long term investments?</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    25<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=b20000">b20000</a> <span class="age"><a href="/item?id=30610112">1 day ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30610112">23 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">27.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30589374">Ask HN: How did you overcome perfectionism?</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    142<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=Anand_S">Anand_S</a> <span class="age"><a href="/item?id=30589374">2 days ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30589374">118 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">28.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30586175">Ask HN: How does one go about bringing a hardware product to market?</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    115<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=collyw">collyw</a> <span class="age"><a href="/item?id=30586175">3 days ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30586175">82 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">29.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30614532">Tell HN: Netlify is experiencing degraded performance</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    13<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=blackbrokkoli">blackbrokkoli</a> <span class="age"><a href="/item?id=30614532">1 day ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30614532">8 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">30.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30619291">Russia – man in the middle attack is possible by the government now</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    28<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=outcoldman">outcoldman</a> <span class="age"><a href="/item?id=30619291">19 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30619291">6 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="morespace" style="height:10px"></tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="title"><a href="/ask?p=2" class="morelink" rel="nofollow">More</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding:0px">
+                                <img alt="" src="/static/s.gif" height="10" width="0"/>
+                                <table style="height:2px;width:100%;border-spacing:0px">
+                                    <tbody>
+                                        <tr>
+                                            <td style="background-color:#ff6600"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br/>
+                                <div style="text-align:center">
+                                    <span class="yclinks">
+                                        <a href="/newsguidelines">Guidelines</a> |<!-- --> <a href="/newsfaq">FAQ</a> | <a href="/cdn-cgi/l/email-protection#7b13153b021814161912151a0f140955181416">Support</a> | <a href="https://github.com/HackerNews/API">API</a> |<!-- --> <a href="/security">Security</a> |<!-- --> <a href="/lists">Lists</a> |<!-- --> <a href="/bookmarklet">Bookmarklet</a> |<!-- --> <a href="/dmca">DMCA</a> | <a href="https://www.ycombinator.com/apply/">Apply to YC</a> | <a href="/cdn-cgi/l/email-protection#8be3e5cbf2e8e4e6e9e2e5eaffe4f9a5e8e4e6">Contact</a>
+                                    </span>
+                                    <br/><br/>
+                                    <form method="get" action="//hn.algolia.com/" style="margin-bottom:1em">Search:<input type="text" name="q" size="17" autoCorrect="off" spellcheck="false" autoCapitalize="off" autoComplete="false"/></form>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charSet="utf-8"/>
+        <title>Hacker News Clone</title>
+        <meta name="referrer" content="origin"/>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+        <link rel="stylesheet" type="text/css" href="/static/news.css"/>
+        <link rel="shortcut icon" href="/static/favicon.ico"/>
+        <meta name="next-head-count" content="6"/>
+    </head>
+    <body>
+        <div id="__next">
+            <div>
+                <table id="hnmain" style="background-color:#f6f6ef;border:0px;border-collapse:collapse;border-spacing:0px;margin-left:auto;margin-right:auto;padding:0px;width:85%">
+                    <tbody>
+                        <tr>
+                            <td style="background-color:#ff6600;padding:0px">
+                                <table style="border:0px;padding:2px;border-spacing:0px;width:100%">
+                                    <tbody>
+                                        <tr>
+                                            <td style="width:18px;padding:0px;padding-right:4px"><a href="/"><img src="/static/y18.gif" style="border:1px;border-color:white;border-style:solid;height:18px;width:18px"/></a></td>
+                                            <td style="line-height:12px;height:10px;padding:0px"><span class="pagetop"><b class="hnname"><a href="/news">Hacker News</a></b> <a class="" href="/newest">new</a> | <a class="" href="/newcomments">comments</a> | <a class="" href="/show">show</a> | <a class="" href="/ask">ask</a> | <a class="" href="/jobs">jobs</a> | <a class="" href="/submit">submit</a></span></td>
+                                            <td style="text-align:right;padding:0px;padding-right:4px"><span class="pagetop"><a href="/login?goto=/">login</a></span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr style="height:10px"></tr>
+                        <tr>
+                            <td style="padding:0px">
+                                <table style="border:0px;padding:0px;border-collapse:collapse;border-spacing:0px" class="itemlist">
+                                    <tbody>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">1.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30627418">Launch HN: Micro Meat (YC S21) – Technology for scaling cultivated meat</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    40<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=asmertgen">asmertgen</a> <span class="age"><a href="/item?id=30627418">34 minutes ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30627418">3 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">2.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title">
+                                                <a class="storylink" href="https://2ality.com/2022/03/type-annotations-first-look.html">First look: adding type annotations to JavaScript</a>
+                                                <span class="sitebit comhead">
+                                                    <!-- -->(<a href="from?site=2ality.com"><span class="sitestr">2ality.com</span></a>)
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    65<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=mariuz">mariuz</a> <span class="age"><a href="/item?id=30626458">2 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30626458">79 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">3.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title">
+                                                <a class="storylink" href="https://cxx.rs/">CXX – A library bridges Rust and C++</a>
+                                                <span class="sitebit comhead">
+                                                    <!-- -->(<a href="from?site=cxx.rs"><span class="sitestr">cxx.rs</span></a>)
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    11<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=synergy20">synergy20</a> <span class="age"><a href="/item?id=30627495">27 minutes ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30627495">discuss</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">4.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title">
+                                                <a class="storylink" href="https://anatomyof.ai/">Anatomy of AI</a>
+                                                <span class="sitebit comhead">
+                                                    <!-- -->(<a href="from?site=anatomyof.ai"><span class="sitestr">anatomyof.ai</span></a>)
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    37<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=elie_CH">elie_CH</a> <span class="age"><a href="/item?id=30626924">1 hour ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30626924">2 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">5.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title">
+                                                <a class="storylink" href="https://justgetflux.com/">f.lux</a>
+                                                <span class="sitebit comhead">
+                                                    <!-- -->(<a href="from?site=justgetflux.com"><span class="sitestr">justgetflux.com</span></a>)
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    128<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=graderjs">graderjs</a> <span class="age"><a href="/item?id=30626803">1 hour ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30626803">70 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">6.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title">
+                                                <a class="storylink" href="https://www.science.org/content/article/impact-crater-under-greenland-s-ice-surprisingly-ancient">Controversial impact crater under Greenland’s ice is surprisingly ancient</a>
+                                                <span class="sitebit comhead">
+                                                    <!-- -->(<a href="from?site=www.science.org"><span class="sitestr">www.science.org</span></a>)
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    34<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=rbanffy">rbanffy</a> <span class="age"><a href="/item?id=30626377">2 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30626377">5 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">7.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title">
+                                                <a class="storylink" href="https://www.kable.io/">Launch HN: Kable (YC W22) – All-in-one platform for API products</a>
+                                                <span class="sitebit comhead">
+                                                    <!-- -->(<a href="from?site=www.kable.io"><span class="sitestr">www.kable.io</span></a>)
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    8<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=asommer12">asommer12</a> <span class="age"><a href="/item?id=30627558">22 minutes ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30627558">discuss</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">8.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title">
+                                                <a class="storylink" href="https://github.com/hlorus/geometry_sketcher">CAD/CAM constraint-based geometry sketcher for Blender</a>
+                                                <span class="sitebit comhead">
+                                                    <!-- -->(<a href="from?site=github.com"><span class="sitestr">github.com</span></a>)
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    84<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=justinclift">justinclift</a> <span class="age"><a href="/item?id=30625341">4 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30625341">24 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">9.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title">
+                                                <a class="storylink" href="https://devonzuegel.com/post/inflation-propagates-unevenly">Inflation Propagates Unevenly</a>
+                                                <span class="sitebit comhead">
+                                                    <!-- -->(<a href="from?site=devonzuegel.com"><span class="sitestr">devonzuegel.com</span></a>)
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    96<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=luu">luu</a> <span class="age"><a href="/item?id=30602072">1 day ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30602072">89 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">10.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title">
+                                                <a class="storylink" href="https://mfaizan.github.io/2022/03/08/why-tensors.html">Why tensors? A beginner&#x27;s perspective</a>
+                                                <span class="sitebit comhead">
+                                                    <!-- -->(<a href="from?site=mfaizan.github.io"><span class="sitestr">mfaizan.github.io</span></a>)
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    17<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=mfn">mfn</a> <span class="age"><a href="/item?id=30610238">1 day ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30610238">4 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">11.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title">
+                                                <a class="storylink" href="https://blog.darrien.dev/posts/you-dont-know-gif">You Don&#x27;t Know GIF – An analysis of a GIF file and some weird GIF features</a>
+                                                <span class="sitebit comhead">
+                                                    <!-- -->(<a href="from?site=blog.darrien.dev"><span class="sitestr">blog.darrien.dev</span></a>)
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    77<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=fagnerbrack">fagnerbrack</a> <span class="age"><a href="/item?id=30624644">6 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30624644">15 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">12.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title">
+                                                <a class="storylink" href="http://www.r2d3.us/visual-intro-to-machine-learning-part-1/">A visual introduction to machine learning (2015)</a>
+                                                <span class="sitebit comhead">
+                                                    <!-- -->(<a href="from?site=www.r2d3.us"><span class="sitestr">www.r2d3.us</span></a>)
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    168<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=fagnerbrack">fagnerbrack</a> <span class="age"><a href="/item?id=30624648">6 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30624648">14 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">13.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title">
+                                                <a class="storylink" href="https://github.com/deepmind/ithaca">Restoring and attributing ancient texts using deep neural networks</a>
+                                                <span class="sitebit comhead">
+                                                    <!-- -->(<a href="from?site=github.com"><span class="sitestr">github.com</span></a>)
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    19<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=giuliomagnifico">giuliomagnifico</a> <span class="age"><a href="/item?id=30626740">1 hour ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30626740">discuss</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">14.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title">
+                                                <a class="storylink" href="https://alecmuffett.com/article/16007">Why offer an Onion Address rather than just encourage browsing-over-Tor?</a>
+                                                <span class="sitebit comhead">
+                                                    <!-- -->(<a href="from?site=alecmuffett.com"><span class="sitestr">alecmuffett.com</span></a>)
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    184<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=kettunen">kettunen</a> <span class="age"><a href="/item?id=30624154">7 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30624154">87 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">15.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title">
+                                                <a class="storylink" href="http://lilypond.org/text-input.en.html">“Compiling” Music</a>
+                                                <span class="sitebit comhead">
+                                                    <!-- -->(<a href="from?site=lilypond.org"><span class="sitestr">lilypond.org</span></a>)
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    55<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=franek">franek</a> <span class="age"><a href="/item?id=30625450">4 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30625450">15 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">16.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title">
+                                                <a class="storylink" href="https://www.sciencedaily.com/releases/2021/07/210712102218.htm">Algae with three sexes that mate in pairs identified in Japanese river (2021)</a>
+                                                <span class="sitebit comhead">
+                                                    <!-- -->(<a href="from?site=www.sciencedaily.com"><span class="sitestr">www.sciencedaily.com</span></a>)
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    91<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=animal_spirits">animal_spirits</a> <span class="age"><a href="/item?id=30611407">1 day ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30611407">28 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">17.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title">
+                                                <a class="storylink" href="https://blog.lizzie.io/linux-containers-in-500-loc.html">Linux containers in 500 lines of code (2016)</a>
+                                                <span class="sitebit comhead">
+                                                    <!-- -->(<a href="from?site=blog.lizzie.io"><span class="sitestr">blog.lizzie.io</span></a>)
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    202<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=graderjs">graderjs</a> <span class="age"><a href="/item?id=30623372">10 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30623372">18 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">18.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title"><a class="storylink" href="item?id=30617118">Ask HN: Any weird tips for weight loss?</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    215<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=fatmoron">fatmoron</a> <span class="age"><a href="/item?id=30617118">22 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30617118">762 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">19.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title">
+                                                <a class="storylink" href="https://www.space4.cc/">Show HN: Space4 – A workplace to help with staying focused and being productive</a>
+                                                <span class="sitebit comhead">
+                                                    <!-- -->(<a href="from?site=www.space4.cc"><span class="sitestr">www.space4.cc</span></a>)
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    36<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=patrickz">patrickz</a> <span class="age"><a href="/item?id=30625797">3 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30625797">23 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">20.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title">
+                                                <a class="storylink" href="https://github.com/hay-kot/mealie">Mealie – a self-hosted recipe manager and meal planner with a RestAPI back end</a>
+                                                <span class="sitebit comhead">
+                                                    <!-- -->(<a href="from?site=github.com"><span class="sitestr">github.com</span></a>)
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    112<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=robinhoodexe">robinhoodexe</a> <span class="age"><a href="/item?id=30623852">8 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30623852">36 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">21.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title">
+                                                <a class="storylink" href="http://morrick.me/archives/9500">My next main browser: a review of Orion</a>
+                                                <span class="sitebit comhead">
+                                                    <!-- -->(<a href="from?site=morrick.me"><span class="sitestr">morrick.me</span></a>)
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    127<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=vimy">vimy</a> <span class="age"><a href="/item?id=30610651">1 day ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30610651">110 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">22.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title">
+                                                <a class="storylink" href="https://bitmovin.com/careers/">Bitmovin (YC S15) Is Hiring Sales Directors in USA, EU and APAC</a>
+                                                <span class="sitebit comhead">
+                                                    <!-- -->(<a href="from?site=bitmovin.com"><span class="sitestr">bitmovin.com</span></a>)
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    1<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=slederer">slederer</a> <span class="age"><a href="/item?id=30623906">8 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30623906">discuss</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">23.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title">
+                                                <a class="storylink" href="https://github.com/cavi-au/Consent-O-Matic">Consent-O-Matic: Automatic handling of GDPR consent forms</a>
+                                                <span class="sitebit comhead">
+                                                    <!-- -->(<a href="from?site=github.com"><span class="sitestr">github.com</span></a>)
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    118<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=zigzag312">zigzag312</a> <span class="age"><a href="/item?id=30625218">5 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30625218">105 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">24.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title">
+                                                <a class="storylink" href="https://godotengine.org/">Free and open source 2D and 3D game engine</a>
+                                                <span class="sitebit comhead">
+                                                    <!-- -->(<a href="from?site=godotengine.org"><span class="sitestr">godotengine.org</span></a>)
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    160<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=modinfo">modinfo</a> <span class="age"><a href="/item?id=30622830">12 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30622830">31 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">25.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title">
+                                                <a class="storylink" href="https://rubytogether.org/">Ruby Together</a>
+                                                <span class="sitebit comhead">
+                                                    <!-- -->(<a href="from?site=rubytogether.org"><span class="sitestr">rubytogether.org</span></a>)
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    230<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=mooreds">mooreds</a> <span class="age"><a href="/item?id=30622186">13 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30622186">63 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">26.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title">
+                                                <a class="storylink" href="https://jvns.ca/blog/2022/03/08/tiny-programs/">Some tiny personal programs I&#x27;ve written</a>
+                                                <span class="sitebit comhead">
+                                                    <!-- -->(<a href="from?site=jvns.ca"><span class="sitestr">jvns.ca</span></a>)
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    765<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=atg_abhishek">atg_abhishek</a> <span class="age"><a href="/item?id=30614623">1 day ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30614623">308 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">27.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title">
+                                                <a class="storylink" href="https://jamesclear.com/the-beginners-guide-to-intermittent-fasting">A beginner&#x27;s guide to intermittent fasting (2012)</a>
+                                                <span class="sitebit comhead">
+                                                    <!-- -->(<a href="from?site=jamesclear.com"><span class="sitestr">jamesclear.com</span></a>)
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    151<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=Tomte">Tomte</a> <span class="age"><a href="/item?id=30625586">4 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30625586">143 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">28.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title">
+                                                <a class="storylink" href="https://www.youtube.com/watch?v=Ph4hlOzq_pE">Donald Knuth on P=NP at CMU-SV (2014) [video]</a>
+                                                <span class="sitebit comhead">
+                                                    <!-- -->(<a href="from?site=www.youtube.com"><span class="sitestr">www.youtube.com</span></a>)
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    33<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=RafelMri">RafelMri</a> <span class="age"><a href="/item?id=30611707">1 day ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30611707">9 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">29.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title">
+                                                <a class="storylink" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4284091/">Stainless steel leaches nickel and chromium into foods during cooking (2013)</a>
+                                                <span class="sitebit comhead">
+                                                    <!-- -->(<a href="from?site=www.ncbi.nlm.nih.gov"><span class="sitestr">www.ncbi.nlm.nih.gov</span></a>)
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    151<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=yumraj">yumraj</a> <span class="age"><a href="/item?id=30621686">15 hours ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30621686">244 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="athing">
+                                            <td style="text-align:right;vertical-align:top" class="title"><span class="rank">30.</span></td>
+                                            <td style="vertical-align:top" class="votelinks">
+                                                <div style="text-align:center">
+                                                    <a class=" " style="cursor:pointer">
+                                                        <div class="votearrow" title="upvote"></div>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td class="title">
+                                                <a class="storylink" href="https://jesseduffield.com/Testing-Private-Methods/">Still No Consensus on Testing Private Methods</a>
+                                                <span class="sitebit comhead">
+                                                    <!-- -->(<a href="from?site=jesseduffield.com"><span class="sitestr">jesseduffield.com</span></a>)
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="subtext">
+                                                <span class="score">
+                                                    56<!-- --> points
+                                                </span>
+                                                by <a class="hnuser" href="/user?id=zdw">zdw</a> <span class="age"><a href="/item?id=30600479">2 days ago</a></span> | <a style="cursor:pointer">hide</a> | <a href="/item?id=30600479">68 comments</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" style="height:5px"></tr>
+                                        <tr class="morespace" style="height:10px"></tr>
+                                        <tr>
+                                            <td colSpan="2"></td>
+                                            <td class="title"><a href="/?p=2" class="morelink" rel="nofollow">More</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding:0px">
+                                <img alt="" src="/static/s.gif" height="10" width="0"/>
+                                <table style="height:2px;width:100%;border-spacing:0px">
+                                    <tbody>
+                                        <tr>
+                                            <td style="background-color:#ff6600"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br/>
+                                <div style="text-align:center">
+                                    <span class="yclinks">
+                                        <a href="/newsguidelines">Guidelines</a> |<!-- --> <a href="/newsfaq">FAQ</a> | <a href="/cdn-cgi/l/email-protection#6d05032d140e02000f04030c19021f430e0200">Support</a> | <a href="https://github.com/HackerNews/API">API</a> |<!-- --> <a href="/security">Security</a> |<!-- --> <a href="/lists">Lists</a> |<!-- --> <a href="/bookmarklet">Bookmarklet</a> |<!-- --> <a href="/dmca">DMCA</a> | <a href="https://www.ycombinator.com/apply/">Apply to YC</a> | <a href="/cdn-cgi/l/email-protection#21494f6158424e4c43484f40554e530f424e4c">Contact</a>
+                                    </span>
+                                    <br/><br/>
+                                    <form method="get" action="//hn.algolia.com/" style="margin-bottom:1em">Search:<input type="text" name="q" size="17" autoCorrect="off" spellcheck="false" autoCapitalize="off" autoComplete="false"/></form>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"serverState":{"apollo":{"data":{"NewsItem:30627418":{"id":30627418,"__typename":"NewsItem","hidden":false,"title":"Launch HN: Micro Meat (YC S21) – Technology for scaling cultivated meat","url":null,"upvoted":false,"commentCount":3,"creationTime":1646923248000,"submitterId":"asmertgen","upvoteCount":40},"NewsItem:30626458":{"id":30626458,"__typename":"NewsItem","hidden":false,"title":"First look: adding type annotations to JavaScript","url":"https://2ality.com/2022/03/type-annotations-first-look.html","upvoted":false,"commentCount":79,"creationTime":1646917614000,"submitterId":"mariuz","upvoteCount":65},"NewsItem:30627495":{"id":30627495,"__typename":"NewsItem","hidden":false,"title":"CXX – A library bridges Rust and C++","url":"https://cxx.rs/","upvoted":false,"commentCount":0,"creationTime":1646923643000,"submitterId":"synergy20","upvoteCount":11},"NewsItem:30626924":{"id":30626924,"__typename":"NewsItem","hidden":false,"title":"Anatomy of AI","url":"https://anatomyof.ai/","upvoted":false,"commentCount":2,"creationTime":1646920646000,"submitterId":"elie_CH","upvoteCount":37},"NewsItem:30626803":{"id":30626803,"__typename":"NewsItem","hidden":false,"title":"f.lux","url":"https://justgetflux.com/","upvoted":false,"commentCount":70,"creationTime":1646920001000,"submitterId":"graderjs","upvoteCount":128},"NewsItem:30626377":{"id":30626377,"__typename":"NewsItem","hidden":false,"title":"Controversial impact crater under Greenland’s ice is surprisingly ancient","url":"https://www.science.org/content/article/impact-crater-under-greenland-s-ice-surprisingly-ancient","upvoted":false,"commentCount":5,"creationTime":1646916961000,"submitterId":"rbanffy","upvoteCount":34},"NewsItem:30627558":{"id":30627558,"__typename":"NewsItem","hidden":false,"title":"Launch HN: Kable (YC W22) – All-in-one platform for API products","url":"https://www.kable.io/","upvoted":false,"commentCount":0,"creationTime":1646923959000,"submitterId":"asommer12","upvoteCount":8},"NewsItem:30625341":{"id":30625341,"__typename":"NewsItem","hidden":false,"title":"CAD/CAM constraint-based geometry sketcher for Blender","url":"https://github.com/hlorus/geometry_sketcher","upvoted":false,"commentCount":24,"creationTime":1646908425000,"submitterId":"justinclift","upvoteCount":84},"NewsItem:30602072":{"id":30602072,"__typename":"NewsItem","hidden":false,"title":"Inflation Propagates Unevenly","url":"https://devonzuegel.com/post/inflation-propagates-unevenly","upvoted":false,"commentCount":89,"creationTime":1646758068000,"submitterId":"luu","upvoteCount":96},"NewsItem:30610238":{"id":30610238,"__typename":"NewsItem","hidden":false,"title":"Why tensors? A beginner's perspective","url":"https://mfaizan.github.io/2022/03/08/why-tensors.html","upvoted":false,"commentCount":4,"creationTime":1646792408000,"submitterId":"mfn","upvoteCount":17},"NewsItem:30624644":{"id":30624644,"__typename":"NewsItem","hidden":false,"title":"You Don't Know GIF – An analysis of a GIF file and some weird GIF features","url":"https://blog.darrien.dev/posts/you-dont-know-gif","upvoted":false,"commentCount":15,"creationTime":1646901649000,"submitterId":"fagnerbrack","upvoteCount":77},"NewsItem:30624648":{"id":30624648,"__typename":"NewsItem","hidden":false,"title":"A visual introduction to machine learning (2015)","url":"http://www.r2d3.us/visual-intro-to-machine-learning-part-1/","upvoted":false,"commentCount":14,"creationTime":1646901664000,"submitterId":"fagnerbrack","upvoteCount":168},"NewsItem:30626740":{"id":30626740,"__typename":"NewsItem","hidden":false,"title":"Restoring and attributing ancient texts using deep neural networks","url":"https://github.com/deepmind/ithaca","upvoted":false,"commentCount":0,"creationTime":1646919565000,"submitterId":"giuliomagnifico","upvoteCount":19},"NewsItem:30624154":{"id":30624154,"__typename":"NewsItem","hidden":false,"title":"Why offer an Onion Address rather than just encourage browsing-over-Tor?","url":"https://alecmuffett.com/article/16007","upvoted":false,"commentCount":87,"creationTime":1646897560000,"submitterId":"kettunen","upvoteCount":184},"NewsItem:30625450":{"id":30625450,"__typename":"NewsItem","hidden":false,"title":"“Compiling” Music","url":"http://lilypond.org/text-input.en.html","upvoted":false,"commentCount":15,"creationTime":1646909270000,"submitterId":"franek","upvoteCount":55},"NewsItem:30611407":{"id":30611407,"__typename":"NewsItem","hidden":false,"title":"Algae with three sexes that mate in pairs identified in Japanese river (2021)","url":"https://www.sciencedaily.com/releases/2021/07/210712102218.htm","upvoted":false,"commentCount":28,"creationTime":1646806030000,"submitterId":"animal_spirits","upvoteCount":91},"NewsItem:30623372":{"id":30623372,"__typename":"NewsItem","hidden":false,"title":"Linux containers in 500 lines of code (2016)","url":"https://blog.lizzie.io/linux-containers-in-500-loc.html","upvoted":false,"commentCount":18,"creationTime":1646888206000,"submitterId":"graderjs","upvoteCount":202},"NewsItem:30617118":{"id":30617118,"__typename":"NewsItem","hidden":false,"title":"Ask HN: Any weird tips for weight loss?","url":null,"upvoted":false,"commentCount":762,"creationTime":1646846106000,"submitterId":"fatmoron","upvoteCount":215},"NewsItem:30625797":{"id":30625797,"__typename":"NewsItem","hidden":false,"title":"Show HN: Space4 – A workplace to help with staying focused and being productive","url":"https://www.space4.cc/","upvoted":false,"commentCount":23,"creationTime":1646912199000,"submitterId":"patrickz","upvoteCount":36},"NewsItem:30623852":{"id":30623852,"__typename":"NewsItem","hidden":false,"title":"Mealie – a self-hosted recipe manager and meal planner with a RestAPI back end","url":"https://github.com/hay-kot/mealie","upvoted":false,"commentCount":36,"creationTime":1646895053000,"submitterId":"robinhoodexe","upvoteCount":112},"NewsItem:30610651":{"id":30610651,"__typename":"NewsItem","hidden":false,"title":"My next main browser: a review of Orion","url":"http://morrick.me/archives/9500","upvoted":false,"commentCount":110,"creationTime":1646797201000,"submitterId":"vimy","upvoteCount":127},"NewsItem:30623906":{"id":30623906,"__typename":"NewsItem","hidden":false,"title":"Bitmovin (YC S15) Is Hiring Sales Directors in USA, EU and APAC","url":"https://bitmovin.com/careers/","upvoted":false,"commentCount":0,"creationTime":1646895677000,"submitterId":"slederer","upvoteCount":1},"NewsItem:30625218":{"id":30625218,"__typename":"NewsItem","hidden":false,"title":"Consent-O-Matic: Automatic handling of GDPR consent forms","url":"https://github.com/cavi-au/Consent-O-Matic","upvoted":false,"commentCount":105,"creationTime":1646907120000,"submitterId":"zigzag312","upvoteCount":118},"NewsItem:30622830":{"id":30622830,"__typename":"NewsItem","hidden":false,"title":"Free and open source 2D and 3D game engine","url":"https://godotengine.org/","upvoted":false,"commentCount":31,"creationTime":1646881936000,"submitterId":"modinfo","upvoteCount":160},"NewsItem:30622186":{"id":30622186,"__typename":"NewsItem","hidden":false,"title":"Ruby Together","url":"https://rubytogether.org/","upvoted":false,"commentCount":63,"creationTime":1646875536000,"submitterId":"mooreds","upvoteCount":230},"NewsItem:30614623":{"id":30614623,"__typename":"NewsItem","hidden":false,"title":"Some tiny personal programs I've written","url":"https://jvns.ca/blog/2022/03/08/tiny-programs/","upvoted":false,"commentCount":308,"creationTime":1646835547000,"submitterId":"atg_abhishek","upvoteCount":765},"NewsItem:30625586":{"id":30625586,"__typename":"NewsItem","hidden":false,"title":"A beginner's guide to intermittent fasting (2012)","url":"https://jamesclear.com/the-beginners-guide-to-intermittent-fasting","upvoted":false,"commentCount":143,"creationTime":1646910289000,"submitterId":"Tomte","upvoteCount":151},"NewsItem:30611707":{"id":30611707,"__typename":"NewsItem","hidden":false,"title":"Donald Knuth on P=NP at CMU-SV (2014) [video]","url":"https://www.youtube.com/watch?v=Ph4hlOzq_pE","upvoted":false,"commentCount":9,"creationTime":1646809580000,"submitterId":"RafelMri","upvoteCount":33},"NewsItem:30621686":{"id":30621686,"__typename":"NewsItem","hidden":false,"title":"Stainless steel leaches nickel and chromium into foods during cooking (2013)","url":"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4284091/","upvoted":false,"commentCount":244,"creationTime":1646871141000,"submitterId":"yumraj","upvoteCount":151},"NewsItem:30600479":{"id":30600479,"__typename":"NewsItem","hidden":false,"title":"Still No Consensus on Testing Private Methods","url":"https://jesseduffield.com/Testing-Private-Methods/","upvoted":false,"commentCount":68,"creationTime":1646750967000,"submitterId":"zdw","upvoteCount":56},"ROOT_QUERY":{"__typename":"Query","feed({\"first\":30,\"skip\":0,\"type\":\"top\"})":[{"__ref":"NewsItem:30627418"},{"__ref":"NewsItem:30626458"},{"__ref":"NewsItem:30627495"},{"__ref":"NewsItem:30626924"},{"__ref":"NewsItem:30626803"},{"__ref":"NewsItem:30626377"},{"__ref":"NewsItem:30627558"},{"__ref":"NewsItem:30625341"},{"__ref":"NewsItem:30602072"},{"__ref":"NewsItem:30610238"},{"__ref":"NewsItem:30624644"},{"__ref":"NewsItem:30624648"},{"__ref":"NewsItem:30626740"},{"__ref":"NewsItem:30624154"},{"__ref":"NewsItem:30625450"},{"__ref":"NewsItem:30611407"},{"__ref":"NewsItem:30623372"},{"__ref":"NewsItem:30617118"},{"__ref":"NewsItem:30625797"},{"__ref":"NewsItem:30623852"},{"__ref":"NewsItem:30610651"},{"__ref":"NewsItem:30623906"},{"__ref":"NewsItem:30625218"},{"__ref":"NewsItem:30622830"},{"__ref":"NewsItem:30622186"},{"__ref":"NewsItem:30614623"},{"__ref":"NewsItem:30625586"},{"__ref":"NewsItem:30611707"},{"__ref":"NewsItem:30621686"},{"__ref":"NewsItem:30600479"}],"me":null}}}}}},"page":"/","query":{},"buildId":"-e_26LZ4Hr_37xMGjZlib","isFallback":false,"customServer":true,"gip":true}</script><script nomodule="" src="/_next/static/chunks/polyfills-eef578260fd80f8fff94.js"></script><script src="/_next/static/chunks/webpack-189c53927ffd3caf09c3.js" async=""></script><script src="/_next/static/chunks/framework-2b26c82ac60f730f49ab.js" async=""></script><script src="/_next/static/chunks/main-cdc763525a8ea4696302.js" async=""></script><script src="/_next/static/chunks/pages/_app-eb86fd1795b1d829ee05.js" async=""></script><script src="/_next/static/chunks/996-bb53b920ae8c58be156e.js" async=""></script><script src="/_next/static/chunks/656-f3a4941483e88b110b40.js" async=""></script><script src="/_next/static/chunks/549-a20184d703fe77274d05.js" async=""></script><script src="/_next/static/chunks/164-d196fbd1b524b1ae8313.js" async=""></script><script src="/_next/static/chunks/258-574c4ff0bc6058badaab.js" async=""></script><script src="/_next/static/chunks/pages/index-6bd8c618562da8c9535c.js" async=""></script><script src="/_next/static/-e_26LZ4Hr_37xMGjZlib/_buildManifest.js" async=""></script><script src="/_next/static/-e_26LZ4Hr_37xMGjZlib/_ssgManifest.js" async=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6e9d02e63e217b7b","version":"2021.12.0","r":1,"token":"67c6a368a2254d3e89ad8839098f7d87","si":100}' crossorigin="anonymous"></script>
+    </body>
+</html>
