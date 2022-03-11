@@ -1,0 +1,310 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+        <center>
+            <table id="hnmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
+                <!-- Navbar -->
+                {% include 'base/header.html' %}
+                <!-- End navbar -->
+                <tr id="pagespace" title="{{ item.title }}" style="height:10px"></tr>
+                <tr>
+                    <td>
+                        <table class="fatitem" border="0">
+                            <tr class='athing' id='30635091'>
+                                <td align="right" valign="top" class="title"><span class="rank"></span></td>
+                                <td valign="top" class="votelinks">
+                                    <center>
+                                        <a id='up_30635091'href='vote?id=30635091&amp;how=up&amp;goto=item%3Fid%3D30635091'>
+                                            <div class='votearrow' title='upvote'></div>
+                                        </a>
+                                    </center>
+                                </td>
+                                <td class="title"><a href="{{ item.url }}" class="titlelink">{{ item.title }}</a><span class="sitebit comhead"> (<a href="from?site=fullstackeconomics.com"><span class="sitestr">{{ item.get_link }}</span></a>)</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"></td>
+                                <td class="subtext">
+                                    <span class="score" id="score_30635091">{{ item.points }} points</span> by <a href="user?id=yedava" class="hnuser">{{ item.author.username }}</a> <span class="age" title="2022-03-11T01:33:43"><a href="item?id=30635091">{{ item.created|timesince }} ago</a></span> <span id="unv_30635091"></span> | <a href="hide?id=30635091&amp;goto=item%3Fid%3D30635091">hide</a> | <a href="/" class="hnpast">past</a> | <a href="/">favorite</a> | <a href="{{ item.get_absolute_url }}">{{ item.comments.all.count }}&nbsp;comments</a>
+                                </td>
+                            </tr>
+                            <tr style="height:10px"></tr>
+                            <tr>
+                                <td colspan="2"></td>
+                                <td>
+                                    <form method="post" action="comment"><input type="hidden" name="parent" value="30635091"><input type="hidden" name="goto" value="item?id=30635091"><input type="hidden" name="hmac" value="/"><textarea name="text" rows="8" cols="80"></textarea>
+                                        <br><br><input type="submit" value="add comment">
+                                    </form>
+                                </td>
+                            </tr>
+                        </table>
+                        <br><br>
+                        <table border="0" class='comment-tree'>
+                            <tr class='athing comtr' id='30635533'>
+                                <td>
+                                    <table border='0'>
+                                        <tr>
+                                            <td class='ind'indent='0'><img src="s.gif" height="1" width="0"></td>
+                                            <td valign="top" class="votelinks">
+                                                <center>
+                                                    <a id='up_30635533'href='vote?id=30635533&amp;how=up&amp;goto=item%3Fid%3D30635091'>
+                                                        <div class='votearrow' title='upvote'></div>
+                                                    </a>
+                                                </center>
+                                            </td>
+                                            <td class="default">
+                                                <div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+                                                    <a href="user?id=_Nat_" class="hnuser">_Nat_</a> <span class="age" title="2022-03-11T02:46:35"><a href="item?id=30635533">51 minutes ago</a></span> <span id="unv_30635533"></span><span class="navs"> | <a href="#30635514" class="clicky" aria-hidden="true">next</a></span> <a class="togg clicky" id="30635533" n="2" href="javascript:void(0)">[–]</a><span class="onstory"></span>                  </span>
+                                                </div>
+                                                <br>
+                                                <div class="comment">
+                                                    <span class="commtext c00">
+                                                        &gt; In a [court filing](<a href="https:&#x2F;&#x2F;storage.courtlistener.com&#x2F;recap&#x2F;gov.uscourts.almd.75040&#x2F;gov.uscourts.almd.75040.41.1.pdf" rel="nofollow">https:&#x2F;&#x2F;storage.courtlistener.com&#x2F;recap&#x2F;gov.uscourts.almd.75...</a> ) last April, Abowd wrote that “our simulated attack showed that a conservative attack scenario using just 6 billion of the over 150 billion statistics released in 2010 would allow an attacker to accurately re-identify at least 52 million 2010 Census respondents (17% of the population) and the attacker would have a high degree of confidence in their results with minimal additional verification or field work.”
+                                                        <p>What would &quot;<i>re-identification</i>&quot; expose?
+                                                        <p>For example, say Alice is re-identified: what does the attacker then know about Alice?
+                                                    </span>
+                                                    <div class='reply'>
+                                                        <p><font size="1">
+                                                            <u><a href="reply?id=30635533&amp;goto=item%3Fid%3D30635091%2330635533">reply</a></u>
+                                                            </font>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr class='athing comtr' id='30635648'>
+                                <td>
+                                    <table border='0'>
+                                        <tr>
+                                            <td class='ind'indent='1'><img src="s.gif" height="1" width="40"></td>
+                                            <td valign="top" class="votelinks">
+                                                <center>
+                                                    <a id='up_30635648'href='vote?id=30635648&amp;how=up&amp;goto=item%3Fid%3D30635091'>
+                                                        <div class='votearrow' title='upvote'></div>
+                                                    </a>
+                                                </center>
+                                            </td>
+                                            <td class="default">
+                                                <div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+                                                    <a href="user?id=snarkerson" class="hnuser">snarkerson</a> <span class="age" title="2022-03-11T03:07:48"><a href="item?id=30635648">30 minutes ago</a></span> <span id="unv_30635648"></span><span class="navs"> | <a href="#30635533" class="clicky" aria-hidden="true">parent</a> | <a href="#30635514" class="clicky" aria-hidden="true">next</a></span> <a class="togg clicky" id="30635648" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>                  </span>
+                                                </div>
+                                                <br>
+                                                <div class="comment">
+                                                    <span class="commtext c00">
+                                                        Would like to talk about an extended warranty for your car?  Or end of life care for your 78yo family member?  Or super awesome student loans for your 16yo family members?
+                                                        <p>That is just low hanging fruit.
+                                                        <p>Imagine cross referencing other data sources to get more complete images of everyone in 52m responder households.
+                                                    </span>
+                                                    <div class='reply'>
+                                                        <p><font size="1">
+                                                            <u><a href="reply?id=30635648&amp;goto=item%3Fid%3D30635091%2330635648">reply</a></u>
+                                                            </font>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr class='athing comtr' id='30635514'>
+                                <td>
+                                    <table border='0'>
+                                        <tr>
+                                            <td class='ind'indent='0'><img src="s.gif" height="1" width="0"></td>
+                                            <td valign="top" class="votelinks">
+                                                <center>
+                                                    <a id='up_30635514'href='vote?id=30635514&amp;how=up&amp;goto=item%3Fid%3D30635091'>
+                                                        <div class='votearrow' title='upvote'></div>
+                                                    </a>
+                                                </center>
+                                            </td>
+                                            <td class="default">
+                                                <div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+                                                    <a href="user?id=frankfrankfrank" class="hnuser">frankfrankfrank</a> <span class="age" title="2022-03-11T02:42:22"><a href="item?id=30635514">55 minutes ago</a></span> <span id="unv_30635514"></span><span class="navs"> | <a href="#30635533" class="clicky" aria-hidden="true">prev</a> | <a href="#30635516" class="clicky" aria-hidden="true">next</a></span> <a class="togg clicky" id="30635514" n="2" href="javascript:void(0)">[–]</a><span class="onstory"></span>                  </span>
+                                                </div>
+                                                <br>
+                                                <div class="comment">
+                                                    <span class="commtext c00">
+                                                        What I find more troubling is that I know for a fact of several people who did not respond to the surveys and were then never again contacted&#x2F;followed up with as was indicated they would be.
+                                                        <p>That was in specific area, which, along with other knowledge and experience with working with the Census bureau years earlier, even before they were in the news for being extremely behind the curve ball even before the pandemic; makes me extremely concerned that the data is not at all accurate.
+                                                        <p>From my perspective it is not at all unreasonable that the 2020 Census data may have a lot more “noise” in order to cover up inaccuracy.
+                                                        <p>I suspect that with some data analysis it should be relatively easy to at least get an indication of something being of between the 2010 and 2020 census along with the community surveys.
+                                                        <p>I have been around these things in the FedGov and what I know does not at all give me a lot of confidence about this “noise for privacy” explanation. Does anyone know if they announced this move to increased “privacy” a long time ago or if it’s just a relatively recent thing? I am not aware of such an announcement. All the sudden the government is concerned with privacy???
+                                                    </span>
+                                                    <div class='reply'>
+                                                        <p><font size="1">
+                                                            <u><a href="reply?id=30635514&amp;goto=item%3Fid%3D30635091%2330635514">reply</a></u>
+                                                            </font>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr class='athing comtr' id='30635542'>
+                                <td>
+                                    <table border='0'>
+                                        <tr>
+                                            <td class='ind'indent='1'><img src="s.gif" height="1" width="40"></td>
+                                            <td valign="top" class="votelinks">
+                                                <center>
+                                                    <a id='up_30635542'href='vote?id=30635542&amp;how=up&amp;goto=item%3Fid%3D30635091'>
+                                                        <div class='votearrow' title='upvote'></div>
+                                                    </a>
+                                                </center>
+                                            </td>
+                                            <td class="default">
+                                                <div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+                                                    <a href="user?id=zamadatix" class="hnuser">zamadatix</a> <span class="age" title="2022-03-11T02:48:26"><a href="item?id=30635542">49 minutes ago</a></span> <span id="unv_30635542"></span><span class="navs"> | <a href="#30635514" class="clicky" aria-hidden="true">parent</a> | <a href="#30635516" class="clicky" aria-hidden="true">next</a></span> <a class="togg clicky" id="30635542" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>                  </span>
+                                                </div>
+                                                <br>
+                                                <div class="comment">
+                                                    <span class="commtext c00">
+                                                        &gt; Does anyone know if they announced this move to increased “privacy” a long time ago or if it’s just a relatively recent thing? I am not aware of such an announcement.
+                                                        <p>I don&#x27;t really keep an eye on census news myself but taking a look I did find this page from 2018 talking about the latest set of changes to go into effect for the (then upcoming) 2020 census <a href="https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20181107155115&#x2F;https:&#x2F;&#x2F;www.census.gov&#x2F;about&#x2F;policies&#x2F;privacy&#x2F;statistical_safeguards.html" rel="nofollow">https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20181107155115&#x2F;https:&#x2F;&#x2F;www.censu...</a>
+                                                    </span>
+                                                    <div class='reply'>
+                                                        <p><font size="1">
+                                                            <u><a href="reply?id=30635542&amp;goto=item%3Fid%3D30635091%2330635542">reply</a></u>
+                                                            </font>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr class='athing comtr' id='30635516'>
+                                <td>
+                                    <table border='0'>
+                                        <tr>
+                                            <td class='ind'indent='0'><img src="s.gif" height="1" width="0"></td>
+                                            <td valign="top" class="votelinks">
+                                                <center>
+                                                    <a id='up_30635516'href='vote?id=30635516&amp;how=up&amp;goto=item%3Fid%3D30635091'>
+                                                        <div class='votearrow' title='upvote'></div>
+                                                    </a>
+                                                </center>
+                                            </td>
+                                            <td class="default">
+                                                <div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+                                                    <a href="user?id=achille" class="hnuser">achille</a> <span class="age" title="2022-03-11T02:42:56"><a href="item?id=30635516">55 minutes ago</a></span> <span id="unv_30635516"></span><span class="navs"> | <a href="#30635514" class="clicky" aria-hidden="true">prev</a> | <a href="#30635747" class="clicky" aria-hidden="true">next</a></span> <a class="togg clicky" id="30635516" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>                  </span>
+                                                </div>
+                                                <br>
+                                                <div class="comment">
+                                                    <span class="commtext c00">
+                                                        Technical explanation by minutephysics: <a href="https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=pT19VwBAqKA" rel="nofollow">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=pT19VwBAqKA</a>
+                                                        <p>The amount of privacy is configurable, and researchers who would like to tune it (in either direction) can make a plea so the public can decide the amount of privacy loss they&#x27;re willing give up in order to aid research.
+                                                        <p>Each culture is different and has different tolerances for privacy and amount of intrusiveness.
+                                                    </span>
+                                                    <div class='reply'>
+                                                        <p><font size="1">
+                                                            <u><a href="reply?id=30635516&amp;goto=item%3Fid%3D30635091%2330635516">reply</a></u>
+                                                            </font>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr class='athing comtr' id='30635747'>
+                                <td>
+                                    <table border='0'>
+                                        <tr>
+                                            <td class='ind'indent='0'><img src="s.gif" height="1" width="0"></td>
+                                            <td valign="top" class="votelinks">
+                                                <center>
+                                                    <a id='up_30635747'href='vote?id=30635747&amp;how=up&amp;goto=item%3Fid%3D30635091'>
+                                                        <div class='votearrow' title='upvote'></div>
+                                                    </a>
+                                                </center>
+                                            </td>
+                                            <td class="default">
+                                                <div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+                                                    <a href="user?id=mensetmanusman" class="hnuser">mensetmanusman</a> <span class="age" title="2022-03-11T03:21:22"><a href="item?id=30635747">16 minutes ago</a></span> <span id="unv_30635747"></span><span class="navs"> | <a href="#30635516" class="clicky" aria-hidden="true">prev</a> | <a href="#30635573" class="clicky" aria-hidden="true">next</a></span> <a class="togg clicky" id="30635747" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>                  </span>
+                                                </div>
+                                                <br>
+                                                <div class="comment">
+                                                    <span class="commtext c5a">The census should be done by overhead satellite images using statistical approaches. It doesn’t matter precisely how many people there are, because that is changing every day.</span>
+                                                    <div class='reply'>
+                                                        <p><font size="1">
+                                                            <u><a href="reply?id=30635747&amp;goto=item%3Fid%3D30635091%2330635747">reply</a></u>
+                                                            </font>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr class='athing comtr' id='30635573'>
+                                <td>
+                                    <table border='0'>
+                                        <tr>
+                                            <td class='ind'indent='0'><img src="s.gif" height="1" width="0"></td>
+                                            <td valign="top" class="votelinks">
+                                                <center>
+                                                    <a id='up_30635573'href='vote?id=30635573&amp;how=up&amp;goto=item%3Fid%3D30635091'>
+                                                        <div class='votearrow' title='upvote'></div>
+                                                    </a>
+                                                </center>
+                                            </td>
+                                            <td class="default">
+                                                <div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+                                                    <a href="user?id=WinterMount223" class="hnuser">WinterMount223</a> <span class="age" title="2022-03-11T02:53:48"><a href="item?id=30635573">44 minutes ago</a></span> <span id="unv_30635573"></span><span class="navs"> | <a href="#30635747" class="clicky" aria-hidden="true">prev</a></span> <a class="togg clicky" id="30635573" n="1" href="javascript:void(0)">[–]</a><span class="onstory"></span>                  </span>
+                                                </div>
+                                                <br>
+                                                <div class="comment">
+                                                    <span class="commtext c88">Flip a coin. Heads you answer the truth. Tails you flip again: heads you answer A, tails you answer not A. Construct a binary tree as required.</span>
+                                                    <div class='reply'>
+                                                        <p><font size="1">
+                                                            <u><a href="reply?id=30635573&amp;goto=item%3Fid%3D30635091%2330635573">reply</a></u>
+                                                            </font>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <br><br>
+                    </td>
+                </tr>
+
+                <!-- Footer -->
+                <tr>
+                    <td>
+                        <img src="s.gif" height="10" width="0">
+                        <table width="100%" cellspacing="0" cellpadding="1">
+                            <tr>
+                                <td bgcolor="#ff6600"></td>
+                            </tr>
+                        </table>
+                        <br>
+                        <center><a href="https://www.ycombinator.com/apply/">
+                            Applications are open for YC Summer 2022
+                            </a>
+                        </center>
+                        <br>
+                        <center>
+                            <span class="yclinks"><a href="newsguidelines.html">Guidelines</a>
+                            | <a href="newsfaq.html">FAQ</a>
+                            | <a href="lists">Lists</a>
+                            | <a href="https://github.com/HackerNews/API">API</a>
+                            | <a href="security.html">Security</a>
+                            | <a href="http://www.ycombinator.com/legal/">Legal</a>
+                            | <a href="http://www.ycombinator.com/apply/">Apply to YC</a>
+                            | <a href="mailto:hn@ycombinator.com">Contact</a></span><br><br>
+                            <form method="get" action="//hn.algolia.com/">Search:
+                                <input type="text" name="q" value="" size="17" autocorrect="off" spellcheck="false" autocapitalize="off" autocomplete="false">
+                            </form>
+                        </center>
+                    </td>
+                </tr>
+            </table>
+        </center>
+{% endblock %}

@@ -1,0 +1,89 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+    <center>
+        <table id="hnmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
+            <!-- Navbar -->
+            {% include 'base/header.html' %}
+
+            <!-- End navbar -->
+            <tr id="pagespace" title="New Comments" style="height:10px"></tr>
+            <tr>
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0" class="itemlist">
+                        <!-- Item -->
+                        {% for item in comments %}
+                        <tr class='athing' id='30636112'>
+                            <td class='ind'></td>
+                            <td valign="top" class="votelinks">
+                                <center>
+                                    <a id='up_30636112' href='vote?id=30636112&amp;how=up&amp;goto=newcomments'>
+                                        <div class='votearrow' title='upvote'></div>
+                                    </a>
+                                </center>
+                            </td>
+                            <td class="default">
+                                <div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+                                        <a href="user?id=0x38B" class="hnuser">{{ item.author.username }}</a> <span class="age"
+                                                                                               title="2022-03-11T04:17:04"><a
+                                        href="item?id=30636112">{{ item.created|timesince }} ago</a></span> <span id="unv_30636112"></span><span
+                                        class="navs"> | <a href="item?id=30629012">parent</a> | <a
+                                        href="context?id=30636112" rel="nofollow">context</a> | <a
+                                        href="newcomments?next=30636078" aria-hidden="true">next</a></span><span
+                                        class="onstory"> |  on: <a href="{{ item.news.get_absolute_url }}">{{ item.news|slice:":50" }}...</a></span>                  </span>
+                                </div>
+                                <br>
+                                <div class="comment">
+                                        <span class="commtext c00">
+                                            {{ item.text }}
+                                        </span>
+                                    <div class='reply'></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="spacer" style="height:15px"></tr>
+                        {% endfor %}
+                        <!-- End Item -->
+                        <tr>
+                            <td colspan="2"></td>
+                            <td class='title'><a href='newcomments?next=30636078' class='morelink' rel='next'>More</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        <!-- Footer -->
+            <tr>
+                <td>
+                    <img src="s.gif" height="10" width="0">
+                    <table width="100%" cellspacing="0" cellpadding="1">
+                        <tr>
+                            <td bgcolor="#ff6600"></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <center><a href="https://www.ycombinator.com/apply/">
+                        Applications are open for YC Summer 2022
+                    </a>
+                    </center>
+                    <br>
+                    <center>
+                            <span class="yclinks"><a href="newsguidelines.html">Guidelines</a>
+                            | <a href="newsfaq.html">FAQ</a>
+                            | <a href="lists">Lists</a>
+                            | <a href="https://github.com/HackerNews/API">API</a>
+                            | <a href="security.html">Security</a>
+                            | <a href="http://www.ycombinator.com/legal/">Legal</a>
+                            | <a href="http://www.ycombinator.com/apply/">Apply to YC</a>
+                            | <a href="mailto:hn@ycombinator.com">Contact</a></span><br><br>
+                        <form method="get" action="//hn.algolia.com/">Search:
+                            <input type="text" name="q" value="" size="17" autocorrect="off" spellcheck="false"
+                                   autocapitalize="off" autocomplete="false">
+                        </form>
+                    </center>
+                </td>
+            </tr>
+        <!-- End footer -->
+        </table>
+    </center>
+{% endblock %}

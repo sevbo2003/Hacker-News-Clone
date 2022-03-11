@@ -1,0 +1,729 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+    <center>
+        <table id="hnmain" border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#f6f6ef">
+            <!-- Navbar -->
+            {% include 'base/header.html' %}
+            <!-- End navbar -->
+            <tr id="pagespace"
+                title="{{ item.title }}"
+                style="height:10px"></tr>
+            <tr>
+                <td>
+                    <table class="fatitem" border="0">
+                        <tr class='athing' id='30635501'>
+                            <td align="right" valign="top" class="title"><span class="rank"></span></td>
+                            <td valign="top" class="votelinks">
+                                <center>
+                                    <a id='up_30635501'
+                                       href='vote?id=30635501&amp;how=up&amp;goto=item%3Fid%3D30635501'>
+                                        <div class='votearrow' title='upvote'></div>
+                                    </a>
+                                </center>
+                            </td>
+                            <td class="title"><a href="item?id=30635501" class="titlelink">{{ item.title }}</a></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"></td>
+                            <td class="subtext">
+                                <span class="score" id="score_30635501">{{ item.points }} points</span> by <a href="user?id=jurassic"
+                                                                                               class="hnuser">{{ item.author.username }}</a>
+                                <span class="age" title="2022-03-11T02:39:58"><a
+                                        href="item?id=30635501">{{ item.created|timesince }} ago</a></span> <span
+                                    id="unv_30635501"></span> | <a
+                                    href="hide?id=30635501&amp;goto=item%3Fid%3D30635501">hide</a> | <a
+                                    href="/"
+                                    class="hnpast">past</a> | <a
+                                    href="fave?id=30635501&amp;auth=7104693dd14ac046cac6c2ea051a54660d4899c9">favorite</a>
+                                | <a href="item?id=30635501">{{ item.comments.all.count }}&nbsp;comments</a>
+                            </td>
+                        </tr>
+                        <tr style="height:2px"></tr>
+                        <tr>
+                            <td colspan="2"></td>
+                            <td>
+                                {{ item.text }}
+                            </td>
+                        </tr>
+                        <tr style="height:10px"></tr>
+                        <tr>
+                            <td colspan="2"></td>
+                            <td>
+                                <form method="post" action="comment"><input type="hidden" name="parent"
+                                                                            value="30635501"><input type="hidden"
+                                                                                                    name="goto"
+                                                                                                    value="item?id=30635501"><input
+                                        type="hidden" name="hmac"
+                                        value="f85bf398a39f382a708e832d384ed9cd16f603e3"><textarea name="text" rows="8"
+                                                                                                   cols="80"></textarea>
+                                    <br><br><input type="submit" value="add comment">
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                    <br><br>
+                    <table border="0" class='comment-tree'>
+                        <tr class='athing comtr' id='30635801'>
+                            <td>
+                                <table border='0'>
+                                    <tr>
+                                        <td class='ind' indent='0'><img src="s.gif" height="1" width="0"></td>
+                                        <td valign="top" class="votelinks">
+                                            <center>
+                                                <a id='up_30635801'
+                                                   href='vote?id=30635801&amp;how=up&amp;goto=item%3Fid%3D30635501'>
+                                                    <div class='votearrow' title='upvote'></div>
+                                                </a>
+                                            </center>
+                                        </td>
+                                        <td class="default">
+                                            <div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+                                                    <a href="user?id=iends" class="hnuser">iends</a> <span class="age"
+                                                                                                           title="2022-03-11T03:28:16"><a
+                                                    href="item?id=30635801">5 minutes ago</a></span> <span
+                                                    id="unv_30635801"></span><span class="navs"> | <a href="#30635764"
+                                                                                                      class="clicky"
+                                                                                                      aria-hidden="true">next</a></span> <a
+                                                    class="togg clicky" id="30635801" n="1" href="javascript:void(0)">[–]</a><span
+                                                    class="onstory"></span>                  </span>
+                                            </div>
+                                            <br>
+                                            <div class="comment">
+                                                    <span class="commtext c00">
+                                                        Staff level. Got 3.8%. Seriously considering leaving. There has been super high turnover of other senior leaders and friends.
+                                                        <p>Could literally double my total comp if I spent some time doing leetcode. Probably 20% raise without leetcode.
+                                                        <p>Have some silver (bronze?) handcuffs or would probably be gone already.
+                                                    </span>
+                                                <div class='reply'>
+                                                    <p><font size="1">
+                                                        <u><a href="reply?id=30635801&amp;goto=item%3Fid%3D30635501%2330635801">reply</a></u>
+                                                    </font>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class='athing comtr' id='30635764'>
+                            <td>
+                                <table border='0'>
+                                    <tr>
+                                        <td class='ind' indent='0'><img src="s.gif" height="1" width="0"></td>
+                                        <td valign="top" class="votelinks">
+                                            <center>
+                                                <a id='up_30635764'
+                                                   href='vote?id=30635764&amp;how=up&amp;goto=item%3Fid%3D30635501'>
+                                                    <div class='votearrow' title='upvote'></div>
+                                                </a>
+                                            </center>
+                                        </td>
+                                        <td class="default">
+                                            <div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+                                                    <a href="user?id=lr4444lr" class="hnuser">lr4444lr</a> <span
+                                                    class="age" title="2022-03-11T03:23:45"><a href="item?id=30635764">9 minutes ago</a></span> <span
+                                                    id="unv_30635764"></span><span class="navs"> | <a href="#30635801"
+                                                                                                      class="clicky"
+                                                                                                      aria-hidden="true">prev</a> | <a
+                                                    href="#30635736" class="clicky"
+                                                    aria-hidden="true">next</a></span> <a class="togg clicky"
+                                                                                          id="30635764" n="1"
+                                                                                          href="javascript:void(0)">[–]</a><span
+                                                    class="onstory"></span>                  </span>
+                                            </div>
+                                            <br>
+                                            <div class="comment">
+                                                    <span class="commtext c00">
+                                                        I think you&#x27;ve answered your own question: your discomfort in moving jobs is not worth to you the bump in salary you&#x27;d get.
+                                                        <p>It&#x27;s already been well established by many even in non inflationary times that dev salary is maximized by switching job every 2-5 years or so, subspecialty dependent.
+                                                    </span>
+                                                <div class='reply'>
+                                                    <p><font size="1">
+                                                        <u><a href="reply?id=30635764&amp;goto=item%3Fid%3D30635501%2330635764">reply</a></u>
+                                                    </font>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class='athing comtr' id='30635736'>
+                            <td>
+                                <table border='0'>
+                                    <tr>
+                                        <td class='ind' indent='0'><img src="s.gif" height="1" width="0"></td>
+                                        <td valign="top" class="votelinks">
+                                            <center>
+                                                <a id='up_30635736'
+                                                   href='vote?id=30635736&amp;how=up&amp;goto=item%3Fid%3D30635501'>
+                                                    <div class='votearrow' title='upvote'></div>
+                                                </a>
+                                            </center>
+                                        </td>
+                                        <td class="default">
+                                            <div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+                                                    <a href="user?id=christophilus"
+                                                       class="hnuser">christophilus</a> <span class="age"
+                                                                                              title="2022-03-11T03:20:26"><a
+                                                    href="item?id=30635736">13 minutes ago</a></span> <span
+                                                    id="unv_30635736"></span><span class="navs"> | <a href="#30635764"
+                                                                                                      class="clicky"
+                                                                                                      aria-hidden="true">prev</a> | <a
+                                                    href="#30635796" class="clicky"
+                                                    aria-hidden="true">next</a></span> <a class="togg clicky"
+                                                                                          id="30635736" n="1"
+                                                                                          href="javascript:void(0)">[–]</a><span
+                                                    class="onstory"></span>                  </span>
+                                            </div>
+                                            <br>
+                                            <div class="comment">
+                                                <span class="commtext c00">Hijacking this with a related question: I’m an independent contractor, and have not yet renegotiated my prices. I just hate those kinds of conversations, but at some point, it is irresponsible to procrastinate. I’d be interested in hearing from other contractors: how have you approached this?</span>
+                                                <div class='reply'>
+                                                    <p><font size="1">
+                                                        <u><a href="reply?id=30635736&amp;goto=item%3Fid%3D30635501%2330635736">reply</a></u>
+                                                    </font>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class='athing comtr' id='30635796'>
+                            <td>
+                                <table border='0'>
+                                    <tr>
+                                        <td class='ind' indent='0'><img src="s.gif" height="1" width="0"></td>
+                                        <td valign="top" class="votelinks">
+                                            <center>
+                                                <a id='up_30635796'
+                                                   href='vote?id=30635796&amp;how=up&amp;goto=item%3Fid%3D30635501'>
+                                                    <div class='votearrow' title='upvote'></div>
+                                                </a>
+                                            </center>
+                                        </td>
+                                        <td class="default">
+                                            <div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+                                                    <a href="user?id=optymizer" class="hnuser">optymizer</a> <span
+                                                    class="age" title="2022-03-11T03:27:38"><a href="item?id=30635796">5 minutes ago</a></span> <span
+                                                    id="unv_30635796"></span><span class="navs"> | <a href="#30635736"
+                                                                                                      class="clicky"
+                                                                                                      aria-hidden="true">prev</a> | <a
+                                                    href="#30635781" class="clicky"
+                                                    aria-hidden="true">next</a></span> <a class="togg clicky"
+                                                                                          id="30635796" n="1"
+                                                                                          href="javascript:void(0)">[–]</a><span
+                                                    class="onstory"></span>                  </span>
+                                            </div>
+                                            <br>
+                                            <div class="comment">
+                                                <span class="commtext c00">Not sure if it helps, but here are my stats as a FAANG senior IC. I received an &quot;exceeds&quot; perf rating, a 6% salary increase and one salary worth of RSUs. Others I&#x27;ve asked got a 3% raise (with a worse rating).</span>
+                                                <div class='reply'>
+                                                    <p><font size="1">
+                                                        <u><a href="reply?id=30635796&amp;goto=item%3Fid%3D30635501%2330635796">reply</a></u>
+                                                    </font>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class='athing comtr' id='30635781'>
+                            <td>
+                                <table border='0'>
+                                    <tr>
+                                        <td class='ind' indent='0'><img src="s.gif" height="1" width="0"></td>
+                                        <td valign="top" class="votelinks">
+                                            <center>
+                                                <a id='up_30635781'
+                                                   href='vote?id=30635781&amp;how=up&amp;goto=item%3Fid%3D30635501'>
+                                                    <div class='votearrow' title='upvote'></div>
+                                                </a>
+                                            </center>
+                                        </td>
+                                        <td class="default">
+                                            <div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+                                                    <a href="user?id=dahdum" class="hnuser">dahdum</a> <span class="age"
+                                                                                                             title="2022-03-11T03:26:11"><a
+                                                    href="item?id=30635781">7 minutes ago</a></span> <span
+                                                    id="unv_30635781"></span><span class="navs"> | <a href="#30635796"
+                                                                                                      class="clicky"
+                                                                                                      aria-hidden="true">prev</a> | <a
+                                                    href="#30635769" class="clicky"
+                                                    aria-hidden="true">next</a></span> <a class="togg clicky"
+                                                                                          id="30635781" n="1"
+                                                                                          href="javascript:void(0)">[–]</a><span
+                                                    class="onstory"></span>                  </span>
+                                            </div>
+                                            <br>
+                                            <div class="comment">
+                                                    <span class="commtext c00">
+                                                        &gt; New hires are getting 50% more equity than the total value of my unvested equity. The official line is that inflation is not a factor in assessing annual comp adjustments.
+                                                        <p>Leave. They either only want you at a discount or you will get a counter offer to consider.
+                                                    </span>
+                                                <div class='reply'>
+                                                    <p><font size="1">
+                                                        <u><a href="reply?id=30635781&amp;goto=item%3Fid%3D30635501%2330635781">reply</a></u>
+                                                    </font>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class='athing comtr' id='30635769'>
+                            <td>
+                                <table border='0'>
+                                    <tr>
+                                        <td class='ind' indent='0'><img src="s.gif" height="1" width="0"></td>
+                                        <td valign="top" class="votelinks">
+                                            <center>
+                                                <a id='up_30635769'
+                                                   href='vote?id=30635769&amp;how=up&amp;goto=item%3Fid%3D30635501'>
+                                                    <div class='votearrow' title='upvote'></div>
+                                                </a>
+                                            </center>
+                                        </td>
+                                        <td class="default">
+                                            <div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+                                                    <a href="user?id=travisjungroth"
+                                                       class="hnuser">travisjungroth</a> <span class="age"
+                                                                                               title="2022-03-11T03:24:11"><a
+                                                    href="item?id=30635769">9 minutes ago</a></span> <span
+                                                    id="unv_30635769"></span><span class="navs"> | <a href="#30635781"
+                                                                                                      class="clicky"
+                                                                                                      aria-hidden="true">prev</a> | <a
+                                                    href="#30635775" class="clicky"
+                                                    aria-hidden="true">next</a></span> <a class="togg clicky"
+                                                                                          id="30635769" n="1"
+                                                                                          href="javascript:void(0)">[–]</a><span
+                                                    class="onstory"></span>                  </span>
+                                            </div>
+                                            <br>
+                                            <div class="comment">
+                                                    <span class="commtext c00">
+                                                        &gt; The official line is that inflation is not a factor in assessing annual comp adjustments.
+                                                        <p>Then what is?
+                                                        <p>Engineer comp has exploded the last few years, well past inflation. So if they&#x27;re not matching inflation, and they&#x27;re not matching the market (which would be even higher) then it sounds like they just pay you whatever they feel like and hope you stick around.
+                                                    </span>
+                                                <div class='reply'>
+                                                    <p><font size="1">
+                                                        <u><a href="reply?id=30635769&amp;goto=item%3Fid%3D30635501%2330635769">reply</a></u>
+                                                    </font>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class='athing comtr' id='30635775'>
+                            <td>
+                                <table border='0'>
+                                    <tr>
+                                        <td class='ind' indent='0'><img src="s.gif" height="1" width="0"></td>
+                                        <td valign="top" class="votelinks">
+                                            <center>
+                                                <a id='up_30635775'
+                                                   href='vote?id=30635775&amp;how=up&amp;goto=item%3Fid%3D30635501'>
+                                                    <div class='votearrow' title='upvote'></div>
+                                                </a>
+                                            </center>
+                                        </td>
+                                        <td class="default">
+                                            <div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+                                                    <a href="user?id=ozzythecat" class="hnuser">ozzythecat</a> <span
+                                                    class="age" title="2022-03-11T03:24:41"><a href="item?id=30635775">8 minutes ago</a></span> <span
+                                                    id="unv_30635775"></span><span class="navs"> | <a href="#30635769"
+                                                                                                      class="clicky"
+                                                                                                      aria-hidden="true">prev</a> | <a
+                                                    href="#30635789" class="clicky"
+                                                    aria-hidden="true">next</a></span> <a class="togg clicky"
+                                                                                          id="30635775" n="1"
+                                                                                          href="javascript:void(0)">[–]</a><span
+                                                    class="onstory"></span>                  </span>
+                                            </div>
+                                            <br>
+                                            <div class="comment">
+                                                    <span class="commtext c00">
+                                                        What company are you at?
+                                                        <p>Amazon is increasing pay for many technical jobs, although specifics haven’t been communicated. They’re selling it as a large bump for everyone, although I already understand it’s mainly to retain talent or at least match inflation. We’ve underpaid our talent in the past compared to competitor companies.
+                                                    </span>
+                                                <div class='reply'>
+                                                    <p><font size="1">
+                                                        <u><a href="reply?id=30635775&amp;goto=item%3Fid%3D30635501%2330635775">reply</a></u>
+                                                    </font>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class='athing comtr' id='30635789'>
+                            <td>
+                                <table border='0'>
+                                    <tr>
+                                        <td class='ind' indent='0'><img src="s.gif" height="1" width="0"></td>
+                                        <td valign="top" class="votelinks">
+                                            <center>
+                                                <a id='up_30635789'
+                                                   href='vote?id=30635789&amp;how=up&amp;goto=item%3Fid%3D30635501'>
+                                                    <div class='votearrow' title='upvote'></div>
+                                                </a>
+                                            </center>
+                                        </td>
+                                        <td class="default">
+                                            <div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+                                                    <a href="user?id=mensetmanusman"
+                                                       class="hnuser">mensetmanusman</a> <span class="age"
+                                                                                               title="2022-03-11T03:27:03"><a
+                                                    href="item?id=30635789">6 minutes ago</a></span> <span
+                                                    id="unv_30635789"></span><span class="navs"> | <a href="#30635775"
+                                                                                                      class="clicky"
+                                                                                                      aria-hidden="true">prev</a> | <a
+                                                    href="#30635751" class="clicky"
+                                                    aria-hidden="true">next</a></span> <a class="togg clicky"
+                                                                                          id="30635789" n="1"
+                                                                                          href="javascript:void(0)">[–]</a><span
+                                                    class="onstory"></span>                  </span>
+                                            </div>
+                                            <br>
+                                            <div class="comment">
+                                                <span class="commtext c00">This micro-behavior is what accelerates inflation. Will be interesting what the next few years bring.</span>
+                                                <div class='reply'>
+                                                    <p><font size="1">
+                                                        <u><a href="reply?id=30635789&amp;goto=item%3Fid%3D30635501%2330635789">reply</a></u>
+                                                    </font>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class='athing comtr' id='30635751'>
+                            <td>
+                                <table border='0'>
+                                    <tr>
+                                        <td class='ind' indent='0'><img src="s.gif" height="1" width="0"></td>
+                                        <td valign="top" class="votelinks">
+                                            <center>
+                                                <a id='up_30635751'
+                                                   href='vote?id=30635751&amp;how=up&amp;goto=item%3Fid%3D30635501'>
+                                                    <div class='votearrow' title='upvote'></div>
+                                                </a>
+                                            </center>
+                                        </td>
+                                        <td class="default">
+                                            <div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+                                                    <a href="user?id=TimH" class="hnuser">TimH</a> <span class="age"
+                                                                                                         title="2022-03-11T03:21:36"><a
+                                                    href="item?id=30635751">11 minutes ago</a></span> <span
+                                                    id="unv_30635751"></span><span class="navs"> | <a href="#30635789"
+                                                                                                      class="clicky"
+                                                                                                      aria-hidden="true">prev</a> | <a
+                                                    href="#30635793" class="clicky"
+                                                    aria-hidden="true">next</a></span> <a class="togg clicky"
+                                                                                          id="30635751" n="1"
+                                                                                          href="javascript:void(0)">[–]</a><span
+                                                    class="onstory"></span>                  </span>
+                                            </div>
+                                            <br>
+                                            <div class="comment">
+                                                <span class="commtext c00">They&#x27;re effectively giving you a pay-cut.</span>
+                                                <div class='reply'>
+                                                    <p><font size="1">
+                                                        <u><a href="reply?id=30635751&amp;goto=item%3Fid%3D30635501%2330635751">reply</a></u>
+                                                    </font>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class='athing comtr' id='30635793'>
+                            <td>
+                                <table border='0'>
+                                    <tr>
+                                        <td class='ind' indent='0'><img src="s.gif" height="1" width="0"></td>
+                                        <td valign="top" class="votelinks">
+                                            <center>
+                                                <a id='up_30635793'
+                                                   href='vote?id=30635793&amp;how=up&amp;goto=item%3Fid%3D30635501'>
+                                                    <div class='votearrow' title='upvote'></div>
+                                                </a>
+                                            </center>
+                                        </td>
+                                        <td class="default">
+                                            <div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+                                                    <a href="user?id=sharps_xp" class="hnuser">sharps_xp</a> <span
+                                                    class="age" title="2022-03-11T03:27:13"><a href="item?id=30635793">6 minutes ago</a></span> <span
+                                                    id="unv_30635793"></span><span class="navs"> | <a href="#30635751"
+                                                                                                      class="clicky"
+                                                                                                      aria-hidden="true">prev</a> | <a
+                                                    href="#30635819" class="clicky"
+                                                    aria-hidden="true">next</a></span> <a class="togg clicky"
+                                                                                          id="30635793" n="1"
+                                                                                          href="javascript:void(0)">[–]</a><span
+                                                    class="onstory"></span>                  </span>
+                                            </div>
+                                            <br>
+                                            <div class="comment">
+                                                <span class="commtext c00">i had a baby just as the pandemic hit and my wfh productivity went down the drain. they just gave me a 9% raise… thanks inflation…</span>
+                                                <div class='reply'>
+                                                    <p><font size="1">
+                                                        <u><a href="reply?id=30635793&amp;goto=item%3Fid%3D30635501%2330635793">reply</a></u>
+                                                    </font>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class='athing comtr' id='30635819'>
+                            <td>
+                                <table border='0'>
+                                    <tr>
+                                        <td class='ind' indent='0'><img src="s.gif" height="1" width="0"></td>
+                                        <td valign="top" class="votelinks">
+                                            <center>
+                                                <a id='up_30635819'
+                                                   href='vote?id=30635819&amp;how=up&amp;goto=item%3Fid%3D30635501'>
+                                                    <div class='votearrow' title='upvote'></div>
+                                                </a>
+                                            </center>
+                                        </td>
+                                        <td class="default">
+                                            <div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+                                                    <a href="user?id=throwaway984393" class="hnuser">throwaway984393</a> <span
+                                                    class="age" title="2022-03-11T03:31:11"><a href="item?id=30635819">2 minutes ago</a></span> <span
+                                                    id="unv_30635819"></span><span class="navs"> | <a href="#30635793"
+                                                                                                      class="clicky"
+                                                                                                      aria-hidden="true">prev</a> | <a
+                                                    href="#30635759" class="clicky"
+                                                    aria-hidden="true">next</a></span> <a class="togg clicky"
+                                                                                          id="30635819" n="1"
+                                                                                          href="javascript:void(0)">[–]</a><span
+                                                    class="onstory"></span>                  </span>
+                                            </div>
+                                            <br>
+                                            <div class="comment">
+                                                    <span class="commtext c00">
+                                                        What about bonus? Your manager should be able to get you a bonus aside from a raise. The latters&#x27;s supposed to be based on market rate, the former is a catch-all which can be performance, inflation, whatever. It&#x27;d probably only be another 3-5% though.
+                                                        <p>There&#x27;s usually only two choices once you get top seniority in your position: move to a different role with a higher salary cap, or find another employer. Personally, if I was happy in my role, I wouldn&#x27;t leave just for money. It&#x27;s hard to find an actually enjoyable place to work. You might be really lucky and just have GIG syndrome.
+                                                    </span>
+                                                <div class='reply'>
+                                                    <p><font size="1">
+                                                        <u><a href="reply?id=30635819&amp;goto=item%3Fid%3D30635501%2330635819">reply</a></u>
+                                                    </font>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class='athing comtr' id='30635759'>
+                            <td>
+                                <table border='0'>
+                                    <tr>
+                                        <td class='ind' indent='0'><img src="s.gif" height="1" width="0"></td>
+                                        <td valign="top" class="votelinks">
+                                            <center>
+                                                <a id='up_30635759'
+                                                   href='vote?id=30635759&amp;how=up&amp;goto=item%3Fid%3D30635501'>
+                                                    <div class='votearrow' title='upvote'></div>
+                                                </a>
+                                            </center>
+                                        </td>
+                                        <td class="default">
+                                            <div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+                                                    <a href="user?id=dudul" class="hnuser">dudul</a> <span class="age"
+                                                                                                           title="2022-03-11T03:23:13"><a
+                                                    href="item?id=30635759">10 minutes ago</a></span> <span
+                                                    id="unv_30635759"></span><span class="navs"> | <a href="#30635819"
+                                                                                                      class="clicky"
+                                                                                                      aria-hidden="true">prev</a> | <a
+                                                    href="#30635652" class="clicky"
+                                                    aria-hidden="true">next</a></span> <a class="togg clicky"
+                                                                                          id="30635759" n="2"
+                                                                                          href="javascript:void(0)">[–]</a><span
+                                                    class="onstory"></span>                  </span>
+                                            </div>
+                                            <br>
+                                            <div class="comment">
+                                                <span class="commtext c00">How do you know how much equity new hires are given?</span>
+                                                <div class='reply'>
+                                                    <p><font size="1">
+                                                        <u><a href="reply?id=30635759&amp;goto=item%3Fid%3D30635501%2330635759">reply</a></u>
+                                                    </font>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class='athing comtr' id='30635803'>
+                            <td>
+                                <table border='0'>
+                                    <tr>
+                                        <td class='ind' indent='1'><img src="s.gif" height="1" width="40"></td>
+                                        <td valign="top" class="votelinks">
+                                            <center>
+                                                <a id='up_30635803'
+                                                   href='vote?id=30635803&amp;how=up&amp;goto=item%3Fid%3D30635501'>
+                                                    <div class='votearrow' title='upvote'></div>
+                                                </a>
+                                            </center>
+                                        </td>
+                                        <td class="default">
+                                            <div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+                                                    <a href="user?id=jurassic" class="hnuser">jurassic</a> <span
+                                                    class="age" title="2022-03-11T03:28:22"><a href="item?id=30635803">5 minutes ago</a></span> <span
+                                                    id="unv_30635803"></span><span class="navs"> | <a href="#30635759"
+                                                                                                      class="clicky"
+                                                                                                      aria-hidden="true">parent</a> | <a
+                                                    href="#30635652" class="clicky"
+                                                    aria-hidden="true">next</a></span> <a class="togg clicky"
+                                                                                          id="30635803" n="1"
+                                                                                          href="javascript:void(0)">[–]</a><span
+                                                    class="onstory"></span>                  </span>
+                                            </div>
+                                            <br>
+                                            <div class="comment">
+                                                <span class="commtext c00">We have a good rapport. We talk candidly about comp.</span>
+                                                <div class='reply'>
+                                                    <p><font size="1">
+                                                        <u><a href="reply?id=30635803&amp;goto=item%3Fid%3D30635501%2330635803">reply</a></u>
+                                                    </font>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class='athing comtr' id='30635652'>
+                            <td>
+                                <table border='0'>
+                                    <tr>
+                                        <td class='ind' indent='0'><img src="s.gif" height="1" width="0"></td>
+                                        <td valign="top" class="votelinks">
+                                            <center>
+                                                <a id='up_30635652'
+                                                   href='vote?id=30635652&amp;how=up&amp;goto=item%3Fid%3D30635501'>
+                                                    <div class='votearrow' title='upvote'></div>
+                                                </a>
+                                            </center>
+                                        </td>
+                                        <td class="default">
+                                            <div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+                                                    <a href="user?id=jackling" class="hnuser">jackling</a> <span
+                                                    class="age" title="2022-03-11T03:09:28"><a href="item?id=30635652">24 minutes ago</a></span> <span
+                                                    id="unv_30635652"></span><span class="navs"> | <a href="#30635759"
+                                                                                                      class="clicky"
+                                                                                                      aria-hidden="true">prev</a></span> <a
+                                                    class="togg clicky" id="30635652" n="2" href="javascript:void(0)">[–]</a><span
+                                                    class="onstory"></span>                  </span>
+                                            </div>
+                                            <br>
+                                            <div class="comment">
+                                                <span class="commtext c00">My company did a 5% across the board raise late last year to make-up for inflation, since before then raises were ~2%, roughly keeping up with inflation from previous years(in Canada). This raise was on-top of the additional raise we will be getting this year in March, so it does seem like my company currently cares about ensuring we at least keep up with inflation. The expectation from talking with some coworkers is that they will continue this trend and at least give us a raise that&#x27;s keeping up with inflation, although I have no proof of this. I do think you&#x27;re getting screwed over here, getting a sub-inflation raise when you&#x27;re exceeding expectations sounds awful. Maybe compensation works differently when you&#x27;re higher up (maybe because you have far more equity&#x2F;bonuses), but it couldn&#x27;t hurt entertaining other offers to see what&#x27;s out there.</span>
+                                                <div class='reply'>
+                                                    <p><font size="1">
+                                                        <u><a href="reply?id=30635652&amp;goto=item%3Fid%3D30635501%2330635652">reply</a></u>
+                                                    </font>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class='athing comtr' id='30635774'>
+                            <td>
+                                <table border='0'>
+                                    <tr>
+                                        <td class='ind' indent='1'><img src="s.gif" height="1" width="40"></td>
+                                        <td valign="top" class="votelinks">
+                                            <center>
+                                                <a id='up_30635774'
+                                                   href='vote?id=30635774&amp;how=up&amp;goto=item%3Fid%3D30635501'>
+                                                    <div class='votearrow' title='upvote'></div>
+                                                </a>
+                                            </center>
+                                        </td>
+                                        <td class="default">
+                                            <div style="margin-top:2px; margin-bottom:-10px;"><span class="comhead">
+                                                    <a href="user?id=htrp" class="hnuser">htrp</a> <span class="age"
+                                                                                                         title="2022-03-11T03:24:31"><a
+                                                    href="item?id=30635774">8 minutes ago</a></span> <span
+                                                    id="unv_30635774"></span><span class="navs"> | <a href="#30635652"
+                                                                                                      class="clicky"
+                                                                                                      aria-hidden="true">parent</a></span> <a
+                                                    class="togg clicky" id="30635774" n="1" href="javascript:void(0)">[–]</a><span
+                                                    class="onstory"></span>                  </span>
+                                            </div>
+                                            <br>
+                                            <div class="comment">
+                                                    <span class="commtext c00">
+                                                        interview elsewhere and offer your employer the opportunity to match.
+                                                        <p>if you have to rebuild your network to be effective at a new firm, anyone they bring in (at a higher rate) will have to do the same
+                                                    </span>
+                                                <div class='reply'>
+                                                    <p><font size="1">
+                                                        <u><a href="reply?id=30635774&amp;goto=item%3Fid%3D30635501%2330635774">reply</a></u>
+                                                    </font>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <br><br>
+                </td>
+            </tr>
+            <!-- Footer -->
+            <tr>
+                <td>
+                    <img src="s.gif" height="10" width="0">
+                    <table width="100%" cellspacing="0" cellpadding="1">
+                        <tr>
+                            <td bgcolor="#ff6600"></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <center><a href="https://www.ycombinator.com/apply/">
+                        Applications are open for YC Summer 2022
+                    </a>
+                    </center>
+                    <br>
+                    <center>
+                            <span class="yclinks"><a href="newsguidelines.html">Guidelines</a>
+                            | <a href="newsfaq.html">FAQ</a>
+                            | <a href="lists">Lists</a>
+                            | <a href="https://github.com/HackerNews/API">API</a>
+                            | <a href="security.html">Security</a>
+                            | <a href="http://www.ycombinator.com/legal/">Legal</a>
+                            | <a href="http://www.ycombinator.com/apply/">Apply to YC</a>
+                            | <a href="mailto:hn@ycombinator.com">Contact</a></span><br><br>
+                        <form method="get" action="//hn.algolia.com/">Search:
+                            <input type="text" name="q" value="" size="17" autocorrect="off" spellcheck="false"
+                                   autocapitalize="off" autocomplete="false">
+                        </form>
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </center>
+{% endblock %}

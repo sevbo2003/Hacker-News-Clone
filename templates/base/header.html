@@ -1,0 +1,35 @@
+{% load static %}
+<tr>
+    <td style="background-color:#ff6600;padding:0px">
+        <table style="border:0px;padding:2px;border-spacing:0px;width:100%">
+            <tbody>
+            <tr>
+                <td style="width:18px;padding:0px;padding-right:4px"><a href="/"><img
+                        src="{% static 'y18.gif' %}"
+                        style="border:1px;border-color:white;border-style:solid;height:18px;width:18px"/></a>
+                </td>
+                <td style="line-height:12px;height:10px;padding:0px"><span class="pagetop"><b
+                        class="hnname"><a href="{% url 'home' %}">Hacker News</a></b>
+                    {% if user.is_authenticated %}
+                        <a class="" href="{% url 'welcome' %}">welcome</a> {% endif %}
+                    | <a
+                            class="" href="{% url 'newcomments' %}">new</a> | <a class=""
+                                                                                 href="{% url 'newcomments' %}">comments</a> | <a
+                            class="" href="/ask">ask</a> | <a class="" href="/jobs">saved</a> | <a
+                            class=""
+                            href="/submit">submit</a></span>
+                </td>
+                {% if user.is_authenticated %}
+                    <td style="text-align:right;padding:0px;padding-right:4px"><span class="pagetop"><a
+                            href="/user?id=sevbo">{{ user.username }}</a> ({{ user.karma }}) | <a
+                            href="{% url 'logout' %}">logout</a></span>
+                    </td>
+                {% else %}
+                    <td style="text-align:right;padding:0px;padding-right:4px"><span class="pagetop"><a
+                            href="{% url 'login' %}">login</a></span></td>
+                {% endif %}
+            </tr>
+            </tbody>
+        </table>
+    </td>
+</tr>

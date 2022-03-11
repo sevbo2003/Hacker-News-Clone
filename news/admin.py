@@ -6,3 +6,6 @@ from .models import News, Comment
 class NewsAdmin(admin.ModelAdmin):
     list_display = ('title', 'author', 'created', 'points', 'number_of_likes')
     list_filter = ('created',)
+
+
+admin.site.register(Comment)

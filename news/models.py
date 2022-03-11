@@ -18,7 +18,9 @@ class News(models.Model):
         verbose_name = 'news'
 
     def get_absolute_url(self):
-        return f"item/{self.id}/"
+        if self.url:
+            return f"item/{self.id}/"
+        return f"item-news/{self.id}/"
 
     def points(self):
         like_point = self.likes.count()
